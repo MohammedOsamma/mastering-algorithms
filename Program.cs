@@ -6,11 +6,17 @@ namespace Algorithms
     {
         static void Main(string[] args)
         {
-            int[] numbers = { 1, 4, 3, 9, 2 };
+            int[] UnsortedArray= { 1, 4, 3, 9, 2 };
 
 
-            BubbleSort.Sort(numbers);
-            Console.WriteLine("Sorted Array :" + string.Join(",",numbers));
+            BubbleSort.Sort(UnsortedArray);
+            Console.WriteLine("Sorted Array Frist Try:" + string.Join(",",UnsortedArray));
+
+            int[] SortedArray = { 1,2,3,4,5 };
+
+
+            BubbleSort.Sort(SortedArray);
+            Console.WriteLine("Sorted Array Second Try :" + string.Join(",", SortedArray));
         }
     }
 }
