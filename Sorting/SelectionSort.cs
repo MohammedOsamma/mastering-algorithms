@@ -19,7 +19,7 @@ namespace Algorithms.Sorting
                 {
                     if (array[j] < array[minIndex])
                     {
-                        minIndex= array[j];
+                        minIndex= j;
                     }
                 }
 
