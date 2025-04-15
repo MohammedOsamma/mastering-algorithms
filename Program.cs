@@ -1,4 +1,5 @@
-﻿using Algorithms.Sorting;
+﻿using System;
+using Algorithms.Sorting;
 
 namespace Algorithms
 {
@@ -6,9 +7,14 @@ namespace Algorithms
     {
         static void Main(string[] args)
         {
+            
             int[] unsortedArray = { 1, 5, 3, 2, 4 };
-          InsertionSort.Sort(unsortedArray);
             Console.WriteLine("Sorted Array :" + string.Join(",",unsortedArray));
+            QuickSort.Sort(unsortedArray);
+            Console.WriteLine("QuickSorts Array :" + string.Join(",",unsortedArray));
+            Console.ReadLine();
+            
+            
         }
     }
 }
