@@ -7,14 +7,15 @@ namespace Algorithms
     {
         static void Main(string[] args)
         {
-            
-            int[] unsortedArray = { 1, 5, 3, 2, 4 };
-            Console.WriteLine("Sorted Array :" + string.Join(",",unsortedArray));
-            QuickSort.Sort(unsortedArray);
-            Console.WriteLine("QuickSorts Array :" + string.Join(",",unsortedArray));
-            Console.ReadLine();
-            
-            
+
+            MergeSort.mergeSort()
+
+            int[] array = { 9, 5, 1, 4 };
+            Console.WriteLine(String.Join(",", array));
+            MergeSort.mergeSort(array, 0, array.Length - 1);
+            Console.WriteLine(String.Join(",", array));
+
+
         }
     }
 }
